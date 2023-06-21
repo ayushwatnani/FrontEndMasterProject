@@ -18,12 +18,12 @@ const ProfileCard = () => {
                             <p>Followers</p>
                         </div>
                         <div>
-                            <p className="num">80K</p>
-                            <p>Followers</p>
+                            <p className="num">803K</p>
+                            <p>Likes</p>
                         </div>
                         <div>
-                            <p className="num">80K</p>
-                            <p>Followers</p>
+                            <p className="num">  1.4K</p>
+                            <p>Photos</p>
                         </div>
                     </div>
                 </div>
