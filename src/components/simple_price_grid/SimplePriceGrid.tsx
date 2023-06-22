@@ -14,8 +14,8 @@ const SimplePriceGrid = () => {
                     </div>
                     <div className="box sub">
                         <h2>Monthly Subscription</h2>
-                        <h5><span className="price"> &dollar;29</span> per month</h5>
-                        <p>Full access for less than &dollar;1 a day</p>
+                        <h5><span className="price"> $29</span> <span> per month</span></h5>
+                        <p>Full access for less than $1 a day</p>
                         <a href="">Sign up</a>
                     </div>
                     <div className="box why">
