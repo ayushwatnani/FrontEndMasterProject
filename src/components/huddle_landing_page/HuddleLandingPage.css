@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+.body {
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(src/assets/huddle_component/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 90%;
+  padding: 40px 20px;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header img {
+  width: 190px;
+  padding-bottom: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero_text a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 8px 12px;
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  width: 140px;
+  text-align: center;
+  font-size: 22px;
+  box-shadow: 0px 8px 17px -8px black;
+  border: 0.2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.hero_text a:hover {
+  background-color: hsl(257, 40%, 49%);
+  color: #fff;
+}
+
+.hero_text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero_text p {
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.social_links {
+  text-align: right;
+}
+
+.social_links a i {
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+}
+
+.social_links a:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.social_links a i::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: -15px;
+  bottom: -13px;
+}
+
+.social_links a:nth-child(2) {
+  margin-left: 2.5rem;
+}
+
+.social_links a:hover i {
+  color: hsl(300, 69%, 71%);
+}
+
+.social_links a i:hover::after {
+  border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 1440px) {
+  .hero_img img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:325px) and (max-width: 768px) {
+  .body{
+    overflow: hidden;
+  }
+    .container{
+    margin: 0 3rem;
+  }
+    .wrapper{
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+    
+  }
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero_img img {
+    width: 70%;
+  }
+
+  .header img{
+    width: 100px;
+  }
+
+  .hero_text h1{
+    font-size: 20px;
+  }
+
+  .hero_text a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 4px 7px;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0px 8px 17px -8px black;
+    border: 0.2px solid #fff;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+  }
+}

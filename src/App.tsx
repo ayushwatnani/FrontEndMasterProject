@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
-import SimplePriceGrid from './components/simple_price_grid/SimplePriceGrid'
+import HuddleLandingPage from './components/huddle_landing_page/HuddleLandingPage'
+// import SimplePriceGrid from './components/simple_price_grid/SimplePriceGrid'
 // import ColumnPreview from './components/3_column_preview/ColumnPreview'
 // import ProfileCard from './components/profile_card_component/ProfileCard'
 // import OrderSummary from './components/Order summary component/Order Summary/OrderSummary'
@@ -16,7 +17,8 @@ function App() {
       {/* <StatsPreview /> */}
       {/* <ColumnPreview /> */}
       {/* <ProfileCard /> */}
-      <SimplePriceGrid />
+      {/* <SimplePriceGrid /> */}
+      <HuddleLandingPage />
     </>
   )
 }
