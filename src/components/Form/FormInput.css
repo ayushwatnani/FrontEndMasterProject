@@ -3,8 +3,9 @@
 .body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
- 
   color: hsl(229, 6%, 66%);
+  
+
 }
 
 p,
@@ -22,4 +23,15 @@ input {
   border-radius: 5px;
   border: 2px solid #e5dada;
   color: black;
+}
+
+.formInput{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+label{
+  text-align: left;
 }
