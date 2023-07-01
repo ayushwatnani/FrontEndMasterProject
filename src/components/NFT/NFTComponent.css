@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+.body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  height: fit-content;
+  width: 24%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.wrapper {
+  padding: 20px;
+  position: relative;
+  background: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  box-shadow:  0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+
+.wrapper img.coin__image{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.wrapper img.coin__image:hover{
+    background: black;
+    opacity: 0.2;
+    background-image: url(src/assets/NFT/icon-view.svg);
+}
+
+.info__value{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    align-items: center;
+}
+
+.coin__value, .time__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 24%;
+    
+}
+
+.coin__value{
+    color: hsl(178, 100%, 50%);;
+}
+
+.coin__value img, .time__left img{
+    overflow: hidden;
+    height: 20px;
+}
+
+.info__creator{
+    border-top: 2px solid hsl(215, 32%, 27%);
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.info__creator img{
+    width: 38px;
+}
