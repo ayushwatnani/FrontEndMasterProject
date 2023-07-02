@@ -34,13 +34,34 @@
     border-radius: 10px;
     width: 100%;
     margin: 0 auto;
-    
+    position: relative;
 }
 
 .wrapper img.coin__image:hover{
-    background: black;
+    background: hsla(178, 100%, 50%, 0.5);;
     opacity: 0.2;
-    background-image: url(src/assets/NFT/icon-view.svg);
+    /* background-image: url(src/assets/NFT/icon-view.svg); */
+}
+.img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.img-overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.coin__image:hover .img-overlay{
+    display: block;
 }
 
 .info__value{

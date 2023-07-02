@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
-import NFTComponent from './components/NFT/NFTComponent'
+// import NFTComponent from './components/NFT/NFTComponent'
+import ProductPreviewCard from './components/product_preview_card/ProductPreviewCard'
 // import FormInput from './components/Form/FormInput'
 // import AdviceGenerator from './components/advice_generator_app/AdviceGenerator'
 // import FourCardFeature from './components/four_card_feature/FourCardFeature'
@@ -111,7 +112,8 @@ function App() {
         <button>Submit</button>
       </form>
       </div> */}
-      <NFTComponent />
+      {/* <NFTComponent /> */}
+      <ProductPreviewCard />
     </>
   )
 }

@@ -7,6 +7,9 @@ const NFTComponent = () => {
             <div className="container">
                 <div className="wrapper">
                     <img className='coin__image' src="src\assets\NFT\image-equilibrium.jpg" alt="" />
+                    <div className="img-overlay">
+          <img src="src\assets\NFT\icon-view.svg" alt="" />
+                </div>
                     <div className="info">
                         <h2 className="info__title">
                             Equilibrium #3429
