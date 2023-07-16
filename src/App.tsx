@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
+import InsertText from './components/insert_text/InsertText'
 // import NFTComponent from './components/NFT/NFTComponent'
 import ProductPreviewCard from './components/product_preview_card/ProductPreviewCard'
 // import FormInput from './components/Form/FormInput'
@@ -113,7 +114,8 @@ function App() {
       </form>
       </div> */}
       {/* <NFTComponent /> */}
-      <ProductPreviewCard />
+      {/* <ProductPreviewCard /> */}
+      <InsertText />
     </>
   )
 }
