@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './InsertText.css'
 
 const InsertText = () => {
@@ -6,8 +6,29 @@ const InsertText = () => {
     const [document, setDocument] = useState<any>('');
     const handleSubmit = (e: any) => {
         e.preventDefault();
-
+        insertTextInDocument();
+        setText('');
     }
+
+    const insertTextInDocument = () => {
+        const newDoc = `<p class="paragraph-highlight-class">${text}</p>  `
+        // setDocument((doc: any) => {
+        //     let d = doc + newDoc;
+        //     return d;
+        // })
+        setDocument(document + newDoc);
+        removeHighlightAfterTime();
+    }
+
+    const removeHighlightAfterTime = () => {
+        setTimeout(() => {
+            setDocument((doc: any) => {
+                let d = doc.replace(`class="paragraph-highlight-class"`, '')
+                return d;
+            })
+        }, 2000)
+    }
+
     return (
         <div className='body'>
             <div className="container">
@@ -24,14 +45,27 @@ const InsertText = () => {
                             placeholder='Enter text here...'
                             rows={5}
                             onChange={(e) => setText(e.target.value)}
-                            >
+                        >
 
                         </textarea>
                     </form>
                 </div>
 
                 <div className="wrapper document_body">
+                    <p className="para">Document</p>
+                    {document ? (
+                        <div
+                            className="document-body"
+                            dangerouslySetInnerHTML={{
+                                __html: document,
+                            }}>
 
+                        </div>
+                    ) : (
+                        <div>
+                            added content will show here
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
